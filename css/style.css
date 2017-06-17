@@ -1064,7 +1064,9 @@ text-decoration: none;
 display: block;
 padding: 15px;
 padding-left: 50px;
- background: url(../img/circl-intro.png) no-repeat left;
+ background: url(../img/sprite.png) no-repeat left;
+   height: 41px;
+    background-position: -5px -138px; 
 margin-left: 15px;
 padding-bottom: 25px;
 padding-top: 25px;
@@ -1072,12 +1074,19 @@ padding-top: 25px;
 
 .btn-take a:hover {
   color: #82CA9C;
-  background: url(../img/circl-intro-hover.png) no-repeat left;
+  background: url(../img/sprite.png) no-repeat left;
+   background-position: -5px -240px;
 }
 
 .btn-take a:active {
   color: #C2E5CF;
-  background: url(../img/circl-intro-click.png) no-repeat left;
+  background: url(../img/sprite.png) no-repeat left;
+  background-position: -5px -189px;
+}
+
+.btn-take span {
+  position: relative;
+  top: -15px;
 }
 
 .introduction__img {
@@ -1154,18 +1163,21 @@ line-height: 24px;
   font-size: 0;
   width: 18px;
   height: 17px;
-  background: url(../img/heart.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -5px -291px;
   position: absolute;
   right: 54px;
   bottom: 24px;
 }
 
 .item__link-like:hover {
-  background: url(../img/heart-hover.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -5px -345px;
 }
 
 .item__link-like:active {
-  background: url(../img/heart-hover.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -5px -318px;
 }
 
 .item--1 {
@@ -1385,7 +1397,8 @@ text-transform: uppercase;
 }
 
 .product-item__apple {
-  background: url(../img/apple-icon.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -5px;
   font-size: 0;
   width: 20px;
   height: 25px;
@@ -1395,15 +1408,18 @@ text-transform: uppercase;
 }
 
 .product-item__apple:hover {
-  background: url(../img/apple-icon-hover.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -75px;
 }
 
 .product-item__apple:active {
-  background: url(../img/apple-icon-click.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -40px;
 }
 
 .product-item__windows {
-  background: url(../img/windows-icon.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -372px;
   display: inline-block;
   font-size: 0;
   width: 24px;
@@ -1413,11 +1429,13 @@ text-transform: uppercase;
 }
 
 .product-item__windows:hover {
-  background: url(../img/windows-icon-hover.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -440px;
 }
 
 .product-item__windows:active {
-  background: url(../img/windows-icon-click.png) no-repeat center;
+  background: url(../img/sprite.png) no-repeat center;
+  background-position: -5px -406px;
 }
 
 .main-footer {
@@ -1470,7 +1488,6 @@ padding-right: 50px;
 }
 
 .stay-in-touch__btn {
-  background: #82ca9c url(../img/check.png) no-repeat center;
   display: inline-block;
   font-size: 0;
   width: 50px;
@@ -1479,6 +1496,16 @@ padding-right: 50px;
   top: 35px;
   border: none;
   right: 0px;
+  background-color: #82ca9c;
+}
+
+.stay-in-touch__btn span {
+  background: url(../img/sprite.png) no-repeat center;
+  height: 18px;
+   width: 24px;
+  background-position: -5px -110px;
+  display: block;
+  margin: 0 auto;
 }
 
 .stay-in-touch__btn:hover {
@@ -1867,14 +1894,6 @@ font-size: 13px;
 font-weight: 700;
 line-height: 22px;
 text-transform: uppercase;
-}
-
-.product-item__apple {
-  background: url(../img/apple-icon.png) no-repeat center;
-}
-
-.product-item__windows {
-  background: url(../img/windows-icon.png) no-repeat center;
 }
 
 .main-footer {
